@@ -1,0 +1,35 @@
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  position: relative;
+}
+.image .food-img {
+  max-width: 100%;
+  transition: 0.3s;
+  padding: 10px;
+}
+
+.cate:hover .food-img {
+  max-width: 80%;
+}
+.cate-name {
+  position: absolute;
+  padding: 0px 6px;
+  border-radius: 5px;
+  top: 7px;
+  right: 5px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#light .cate-name {
+  background-color: #7e7d7d;
+  color: white;
+}
+#dark .cate-name {
+  background-color: #bcbcbc;
+  color: black;
+}

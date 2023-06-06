@@ -1,0 +1,45 @@
+.mealsList {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.mealsList .meal {
+  margin: 10px;
+  border-radius: 4px;
+  background-color: white;
+}
+.meal .meal-image img {
+  max-width: 100%;
+}
+.meal .meal-name {
+  margin: 8px 0px 13px 8px;
+  font-weight: 600;
+}
+
+#dark .meal .meal-name {
+  color: white;
+}
+
+#light .meal {
+  background-color: white;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 20%);
+}
+#dark .meal {
+  background-color: #7e7d7d;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 50%);
+}
+
+@media (max-width: 768px) {
+  .mealsList {
+    justify-content: center;
+  }
+  .meal {
+    width: 41.333333% !important;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
+  .meal {
+    width: 29% !important;
+  }
+}

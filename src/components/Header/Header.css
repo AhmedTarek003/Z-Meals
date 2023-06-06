@@ -1,0 +1,150 @@
+.header {
+  position: relative;
+  background-image: url("../../assets/360_F_244698725_uWdUNY1oiaHthwcb1NK6IqtPuRNKHor2.jpg");
+  background-size: cover;
+  height: 360px;
+  margin-bottom: 50px;
+}
+.header::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 60%);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+@media (max-width: 676px) {
+  .header {
+    height: 290px;
+  }
+}
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+.search {
+  position: absolute;
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 100%;
+  text-align: center;
+}
+.search .search-bar {
+  margin-bottom: 15px;
+  user-select: none;
+}
+.search .search-input {
+  width: 35%;
+  padding: 9px;
+  border-radius: 13px;
+  border: none;
+  background-color: #dedbdb;
+}
+.search .search-input:focus {
+  outline: none;
+}
+.search .search-btn {
+  border: none;
+  padding: 9px 20px;
+  margin-left: 10px;
+  border-radius: 10px;
+  background-color: #7e7d7d;
+  color: white;
+  transition: 0.3s;
+  border: 1px solid #dedbdb;
+}
+.search .search-btn:focus {
+  outline: none;
+}
+.search .search-btn:hover {
+  background-color: #dedbdb;
+  color: black;
+}
+.caption {
+  color: white;
+  font-family: "Lobster", cursive;
+  font-size: 25px;
+}
+
+@media (max-width: 676px) {
+  .search .search-input {
+    width: 74%;
+  }
+  .search .search-btn {
+    padding: 5px 9px;
+  }
+}
+
+.search-product {
+  background-color: white;
+  padding: 15px;
+}
+#dark .search-product {
+  background-color: #969292;
+}
+
+.mealsList {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.mealsList .meal {
+  margin: 10px;
+  border-radius: 4px;
+  background-color: white;
+  position: relative;
+}
+.meal .meal-image img {
+  max-width: 100%;
+}
+.meal .meal-name {
+  margin: 8px 0px 13px 8px;
+  font-weight: 600;
+}
+
+#dark .meal .meal-name {
+  color: white;
+}
+
+#light .meal {
+  background-color: white;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 20%);
+}
+#dark .meal {
+  background-color: #7e7d7d;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 50%);
+}
+
+@media (max-width: 768px) {
+  .mealsList {
+    justify-content: center;
+  }
+  .meal {
+    width: 41.333333% !important;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
+  .meal {
+    width: 29% !important;
+  }
+}
+
+.meal .category-name {
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  background: white;
+  padding: 0px 20px;
+  font-size: 13px;
+  border-radius: 27px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.no-food {
+  text-align: center;
+  font-size: 17px;
+}

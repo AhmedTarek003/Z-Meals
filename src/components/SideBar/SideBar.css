@@ -1,0 +1,103 @@
+.sidebar {
+  right: -300px;
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  width: 300px;
+  transition: 0.7s;
+  box-shadow: -4px 0px 12px 0px #342f2f8c;
+  border-radius: 10px 0px 0px 10px;
+  padding: 5px 10px;
+}
+.sidebar.On {
+  right: 0px;
+}
+#light .sidebar.On {
+  background-color: #929292;
+}
+#dark .sidebar.On {
+  background-color: #b4b3b3;
+}
+.close-icon {
+  cursor: pointer;
+  font-size: 25px;
+  margin: 7px 0px;
+  transition: 0.3s;
+}
+.close-icon:hover {
+  color: rgb(230, 115, 115);
+}
+
+.mood {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.field {
+  background-color: #eee;
+  width: 46px;
+  height: 19px;
+  border-radius: 15px;
+  position: relative;
+  cursor: pointer;
+}
+.field .ball {
+  display: flex;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #ccc;
+  position: absolute;
+  top: 2px;
+  transition: 0.3s;
+  left: 5px;
+}
+
+#light .field .ball {
+  left: 5px;
+}
+
+#dark .field .ball {
+  left: 26px;
+  background-color: #0c83f0;
+}
+#light .mood .theme-name {
+  color: white;
+}
+#dark .mood .theme-name {
+  color: black;
+}
+.links {
+  list-style: none;
+}
+.links .li-link {
+  margin: 18px 15px;
+  background-color: #7e7d7d3b;
+  padding: 2px 24px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+.links .link:hover .li-link {
+  color: #333;
+  margin-left: 30px;
+}
+.links .li-link {
+  color: white;
+}
+#dark .links .li-link {
+  color: black;
+}
+#dark .links .link:hover .li-link {
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .sidebar {
+    width: 250px;
+  }
+}

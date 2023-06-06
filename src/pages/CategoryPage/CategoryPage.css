@@ -1,0 +1,9 @@
+.meals {
+  padding-top: 80px;
+}
+.notFound {
+  font-size: 30px;
+  margin-top: 30px;
+  color: red;
+  font-weight: 600;
+}
